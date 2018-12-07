@@ -1,5 +1,5 @@
 ---
-title: CultureHQ Open Source
+title: CultureHQ.com - A Better Workplace Community
 ---
 
 At CultureHQ we have a commitment to both open source code and community. Below is a list of our projects that we are actively developing.
