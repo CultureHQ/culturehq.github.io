@@ -1,4 +1,6 @@
-# CultureHQ open source
+---
+title: CultureHQ Open Source
+---
 
 At CultureHQ we have a commitment to both open source code and community. Below is a list of our projects that we are actively developing.
 
