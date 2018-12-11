@@ -3,20 +3,16 @@ permalink: /
 heading: CultureHQ
 ---
 
-# Posts
+# Blog posts
 
 * [Skipping preflight checks](posts/2018-12-11-skipping-preflight-checks) - December 11, 2018
 
-# Open source
-
-At CultureHQ we have a commitment to both open source code and community. Below is a list of our projects that we are actively developing.
-
-## Ruby
+# Ruby projects
 
 * [CultureHQ/adequate_serialization](https://github.com/CultureHQ/adequate_serialization) - Serializes objects adequately
 * [CultureHQ/paperweight](https://github.com/CultureHQ/paperweight) - Paperclip attachments in the background
 
-## JavaScript
+## JavaScript projects
 
 * [CultureHQ/add-to-calendar](https://culturehq.github.io/add-to-calendar) - A small package for adding an event to a calendar.
 * [CultureHQ/charts](https://culturehq.github.io/charts/) - An SVG React charting library
