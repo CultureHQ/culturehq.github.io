@@ -1,4 +1,6 @@
-# Skipping preflight checks
+---
+heading: Skipping preflight checks
+---
 
 Preflight checks are part of the CORS system that browsers fire before cross-origin requests in order to determine if the request is allowed. These requests can add up over time and cause a discernable lag in your web application.
 
@@ -44,7 +46,6 @@ In the above example, we've configured the `/proxy` endpoint to return an HTML d
 On the frontend, we can then embed an `iframe` within the current page that requests that proxy page, and steal the `fetch` function from it in order to issue requests to our API.
 
 ```javascript
-document.domain = ""
 const fetcher = { fetch: window.fetch.bind(window) };
 
 const skipPreflightChecks = () => {

@@ -1,5 +1,6 @@
 ---
 permalink: /
+heading: CultureHQ
 ---
 
 # Posts
