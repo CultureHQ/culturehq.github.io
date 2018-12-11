@@ -2,6 +2,10 @@
 permalink: /
 ---
 
+# Posts
+
+* [Skipping preflight checks](posts/2018-12-11-skipping-preflight-checks) - December 11, 2018
+
 # Open source
 
 At CultureHQ we have a commitment to both open source code and community. Below is a list of our projects that we are actively developing.
