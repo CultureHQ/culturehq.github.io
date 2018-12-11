@@ -13,7 +13,7 @@ However, if these resources are served on the same parent domain (in this case `
 
 [CORS](https://developer.mozilla.org/en-US/docs/Glossary/CORS) is a system built with HTTP headers that is used to determine whether or not JavaScript code is allowed to access resources on certain servers. By default, due to the [same-origin security policy](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy), JavaScript code cannot request resources on servers that do not match the current origin (as determined by `document.domain`). However, by configuring CORS headers you can open up certain resources to certain HTTP methods and headers, thereby allowing you server to be accessed from various cross-origin JavaScript resources.
 
-## `document.domain`
+## document.domain
 
 When browsers are determining whether or not to issue a preflight check, they'll check the `document.domain` property. If the value matches up with the domain of the requested resource, a preflight check doesn't get issued. You can [change this value](https://developer.mozilla.org/en-US/docs/Web/Security/Same-origin_policy#Changing_origin) at any time from within JavaScript code to be either the current domain or any superdomain of the current domain (for instance, on the `platform.culturehq.com` domain you can set it to `culturehq.com`). Then, if you're requesting resources on the other domain preflight checks will be skipped. The problem still exists however if you're trying to access a separate subdomain (as in `api.culturehq.com`). In this case you'll need to change the domain on both the server and the client.
 
