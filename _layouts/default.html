@@ -8,17 +8,26 @@
 
     <title>CultureHQ.com - A Better Workplace Community</title>
     <link rel="stylesheet" type="text/css" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">
-    <link rel="stylesheet" type="text/css" href="assets/css/chq.css">
+    <link rel="stylesheet" type="text/css" href="/assets/css/chq.css">
   </head>
   <body>
-    <header class="page-header" role="banner">
-      <h1 class="project-name">{{ page.heading }}</h1>
-      {% if page.subheading %}
-        <h2 class="project-tagline">{{ page.subheading }}</h2>
-      {% endif %}
-    </header>
-    <main class="main-content" role="main">
-      {{ content }}
-    </main>
+    <div class="container">
+      <header class="page-header" role="banner">
+        <h1 class="project-name">{{ page.heading }}</h1>
+        {% if page.subheading %}
+          <h2 class="project-tagline">{{ page.subheading }}</h2>
+        {% endif %}
+      </header>
+      <main class="main-content" role="main">
+        {{ content }}
+      </main>
+    </div>
+    <footer>
+      <p>
+        Copyright (c) 2018 CultureHQ
+        <br />
+        <a href="/">engineering.culturehq.com</a>
+      </p>
+    </footer>
   </body>
 </html>
