@@ -35,8 +35,6 @@ Rails.application.routes.draw do
   get :proxy, to: lambda { |_env|
     [200, { 'Content-Type' => 'text/html' }, [PROXY_RESPONSE]]
   }
-
-  ...
 end
 ```
 
