@@ -19,7 +19,7 @@ When browsers are determining whether or not to issue a preflight check, they'll
 
 ## Aligning the API
 
-In order to change the domain of the server such that preflight checks will be skipped entirely across subdomains, we can get clever. The first step is to configure an endpoint on the server that will return a very simple HTML response that includes the JavaScript to set the domain to the superdomain. The example below configures a `Ruby on Rails` application to server up just that kind of page:
+In order to change the domain of the server such that preflight checks will be skipped entirely across subdomains, we can get clever. The first step is to configure an endpoint on the server that will return a very simple HTML response that includes the JavaScript to set the domain to the superdomain. The example below configures a `Ruby on Rails` application to serve up just that kind of page:
 
 ```ruby
 PROXY_RESPONSE = <<~HTML
