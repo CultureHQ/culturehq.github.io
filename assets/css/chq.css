@@ -21,6 +21,13 @@ body {
 
 .project-name {
   font-size: 2.5rem;
+  font-weight: 300;
+}
+
+@media screen and (max-width: 42em) {
+  .project-name {
+    font-size: 1.75rem;
+  }
 }
 
 .project-tagline {
@@ -31,10 +38,12 @@ body {
 .main-content h1,
 .main-content a {
   color: #6a89af;
+  font-weight: 300;
 }
 
 .main-content h2 {
   color: #79b17d;
+  font-weight: 300;
 }
 
 .main-content img {
