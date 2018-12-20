@@ -29,3 +29,4 @@ heading: CultureHQ Engineering
 * [actions-bundler](https://github.com/CultureHQ/actions-bundler) - GitHub actions wrapper for the bundler CLI
 * [actions-yarn](https://github.com/CultureHQ/actions-yarn) - GitHub actions wrapper for the yarn CLI
 * [culturehq.github.io](https://github.com/CultureHQ/culturehq.github.io) - the source for this website
+* [github-actions-badge](https://github.com/CultureHQ/github-actions-badge) - a GitHub Actions README badge
