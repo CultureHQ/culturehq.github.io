@@ -34,7 +34,7 @@ admins.to_sql
 
 This allows us to construct various relations in our apps without having to manually write out SQL queries. Because these kinds of relation mutations (e.g. `where(admin: true)`) tend to get repeated throughout the application, `Rails` provides a mechanism called scopes to name them and define the relation mutation.
 
-For example, in order to be to define what consistutes an "admin" user in one location without having to use `where` everywhere, you can define as scope like:
+For example, in order to define what consistutes an "admin" user in one location without having to use `where` everywhere, you can define a scope like:
 
 ```ruby
 class User < ActiveRecord::Base
