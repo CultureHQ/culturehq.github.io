@@ -5,6 +5,7 @@ heading: CultureHQ Engineering
 
 # Blog posts
 
+* [Delegating ActiveRecord scopes](posts/2019-01-11-delegating-activerecord-scopes) - January 11, 2018
 * [Skipping preflight checks](posts/2018-12-11-skipping-preflight-checks) - December 11, 2018
 
 # Ruby projects

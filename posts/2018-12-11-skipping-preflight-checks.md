@@ -1,6 +1,6 @@
 ---
 heading: Skipping preflight checks
-subheading: 2018-12-11
+subheading: 2018-12-11 - @kddeisz
 ---
 
 Preflight checks are part of the CORS system that browsers fire before cross-origin requests in order to determine if the request is allowed. These requests can add up over time and cause a discernable lag in your web application.
