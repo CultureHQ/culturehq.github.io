@@ -193,11 +193,13 @@ This results in an understandable named scope returning a column that is read fr
 
 ## Caveats
 
-It would be a little misleading to end the post here, within attaching a slight bit of warning. There are times when dynamic columns are appropriate and times when they aren't, and those times are almost exclusively going to determined through measurement. I would check out [memory_profiler](https://github.com/SamSaffron/memory_profiler) and [ruby-prof](https://github.com/ruby-prof/ruby-prof), both are excellent tools for measuring the impact of code on memory and performance.
+It would be a little misleading to end the post here, without attaching a slight bit of warning. There are times when dynamic columns are appropriate and times when they aren't, and those times are almost exclusively going to determined through measurement. I would check out [memory_profiler](https://github.com/SamSaffron/memory_profiler) and [ruby-prof](https://github.com/ruby-prof/ruby-prof), both are excellent tools for measuring the impact of code on memory and performance.
 
 Additionally, you can and should measure the performance of your database. This post has discussed sending too much information back, which is a measurable quantity. To find out how, check your respective databases' documentation. There are great ecosystems around all of the popular options (`MySQL`, `PostgreSQL`, `Oracle`, etc.).
 
-Also as an aside, most of the examples above could be even further optimized with some combinations of `select_values`/`pluck`. I'm assuming you have other things to do with the objects in your view layer besides just getting counts.
+Also as an aside, most of the examples above could be even further optimized with some combinations of `select_values`/`pluck`. I'm assuming you have other things to do with the objects in your view layer besides just getting counts, which is why I've stuck with returning `ActiveRecord::Base` instances.
+
+Finally, `GROUP BY` as in the last example has its own performance implications, and will largely depend on your schema and the indices you have in place. As always, measure before you go wildly changing code. In general speed and memory are an inverse correlation, so it will also depend on what is important to you and your business/application.
 
 ## tl;dr
 
