@@ -37,9 +37,15 @@ Let's rewrite the query to send fewer things back to us and then work backward f
 SELECT "users"."first_name", "users"."last_name" FROM "users"
 ```
 
-We can perform the exact same mapping as before, and this time we've required less data (proportional to the number of columns on the `users` table) to be sent back from the database.
+We can perform the exact same mapping as before, and this time we've required less data (proportional to the number of columns on the `users` table) to be sent back from the database. We can achieve this by modifying our `Relation` with the `select` method, as in:
 
-One small caveat to the above approach: it works in this example because we're only referencing the `first_name` and `last_name` columns out of the resulting `User` objects. If we were to instead reference a column that we didn't select (e.g., `admin`) then it would raise an error complaining about:
+```ruby
+User.select(:first_name, :last_name).map do |user|
+  "#{user.first_name} #{user.last_name}"
+end
+```
+
+One small caveat to the above approach: it works in this example because we're only referencing the `first_name` and `last_name` attributes out of the resulting `User` objects. If we were to instead reference an attribute that we didn't select (e.g., `admin`) then it would raise an error complaining about missing the attribute, as in:
 
 ```ruby
 ActiveModel::MissingAttributeError (missing attribute: admin)
@@ -113,7 +119,7 @@ class User < ActiveRecord::Base
 end
 ```
 
-This indicates to future developers that this column is a dynamically-defined column based on the other columns of the table, and so they should not be surprised when the `full_name` method is referenced later in the code.
+This indicates to future developers that this column is a dynamically-defined column that may or may not be present based on the manner in which the `User` was selected, and so they should not be surprised when the `full_name` method is referenced later in the code.
 
 ## Counting
 
@@ -155,7 +161,7 @@ User.includes(:posts).map do |user|
 end
 ```
 
-Now when you rerun the code you'll only get two generated queries, one for the `users` table and one for the `posts` table:
+Now when you rerun the code you'll only get two generated queries, one select query from the `users` table and one select query with a massive `IN` statement for the `posts` table:
 
 ```sql
 User Load (3.0ms)  SELECT "users".* FROM "users"
