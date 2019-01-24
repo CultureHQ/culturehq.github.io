@@ -157,4 +157,4 @@ In this way we can delineate between scopes that are defined for the purpose of 
 
 The `ActiveRecord` ORM provides named scopes that contain logic determining how to refine SQL queries. These can be combined across associations using the `merge` method. Furthermore, the `merge` call can be defined in its own named scope. Finally, we can give a name to these kinds of `merge` scopes (`delegate_scope` is proposed above) to indicate that the named scope modifies associated tables.
 
-[Back to home](/)
+[← Back to home](/)

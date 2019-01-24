@@ -66,4 +66,4 @@ Using the above code we can then call `skipPreflightChecks()`, and once it resol
 
 Preflight checks are triggered because of the same-origin check. You can change the domain of your webpage by modifying `document.domain`. Given these facts, you can embed an iframe in your webpage that sets its own domain to your top-level domain as well as setting your domain to your top-level domain in your frontend to bypass these checks and achieve preflight-less cross subdomain requests that are faster to resolve.
 
-[Back to home](/)
+[← Back to home](/)

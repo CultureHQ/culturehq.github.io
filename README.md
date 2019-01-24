@@ -5,8 +5,9 @@ heading: CultureHQ Engineering
 
 # Blog posts
 
-* [Dynamic ActiveRecord columns](posts/2019-01-18-dynamic-activerecord-columns) - January 18, 2018
-* [Delegating ActiveRecord scopes](posts/2019-01-11-delegating-activerecord-scopes) - January 11, 2018
+<!-- * [AdequateSerialization](posts/2019-01-25-adequate-serialization) - January 24, 2019 -->
+* [Dynamic ActiveRecord columns](posts/2019-01-18-dynamic-activerecord-columns) - January 18, 2019
+* [Delegating ActiveRecord scopes](posts/2019-01-11-delegating-activerecord-scopes) - January 11, 2019
 * [Skipping preflight checks](posts/2018-12-11-skipping-preflight-checks) - December 11, 2018
 
 # Ruby projects

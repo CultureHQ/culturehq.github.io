@@ -209,4 +209,4 @@ Finally, `GROUP BY` as in the last example has its own performance implications,
 
 `ActiveRecord` is a powerful tool that in inexperienced hands can select far more data than necessary. You can tell it to create method names from dynamic column definitions using SQL strings or `Arel`. These dynamic methods can drastically cut down on the amount of memory allocated both by `ruby` and by your database.
 
-[Back to home](/)
+[← Back to home](/)
