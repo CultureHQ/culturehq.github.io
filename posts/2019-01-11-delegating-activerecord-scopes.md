@@ -1,7 +1,5 @@
----
-heading: Delegating ActiveRecord scopes
-subheading: 2019-01-11 - @kddeisz
----
+<h1 class="post-heading">Delegating ActiveRecord scopes</h1>
+<em>January 11, 2019 - [@kddeisz](https://twitter.com/kddeisz)</em>
 
 In `Ruby on Rails`, access to the database is by default controlled through the `ActiveRecord` ORM. `ActiveRecord` operates on `Relation` objects that contain the configuration for an SQL query that will be executed at a later time. `Relation` objects have the ability to copy their internal configuration over to a new `Relation` object with new options in order to further customize those queries.
 
@@ -158,3 +156,5 @@ In this way we can delineate between scopes that are defined for the purpose of 
 ## tl;dr
 
 The `ActiveRecord` ORM provides named scopes that contain logic determining how to refine SQL queries. These can be combined across associations using the `merge` method. Furthermore, the `merge` call can be defined in its own named scope. Finally, we can give a name to these kinds of `merge` scopes (`delegate_scope` is proposed above) to indicate that the named scope modifies associated tables.
+
+[Back to home](/)

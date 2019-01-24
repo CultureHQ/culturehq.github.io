@@ -1,7 +1,5 @@
----
-heading: Dynamic ActiveRecord columns
-subheading: 2019-01-18 - @kddeisz
----
+<h1 class="post-heading">Dynamic ActiveRecord columns</h1>
+<em>January 18, 2019 - [@kddeisz](https://twitter.com/kddeisz)</em>
 
 When dealing with any kind of data transmission, the problem almost always boils down to the amount of data being sent. Engineers can optimize the speed of the wire and the compression of the data, but at the end of the day sending fewer things is almost always going to yield the biggest gains.
 
@@ -210,3 +208,5 @@ Finally, `GROUP BY` as in the last example has its own performance implications,
 ## tl;dr
 
 `ActiveRecord` is a powerful tool that in inexperienced hands can select far more data than necessary. You can tell it to create method names from dynamic column definitions using SQL strings or `Arel`. These dynamic methods can drastically cut down on the amount of memory allocated both by `ruby` and by your database.
+
+[Back to home](/)

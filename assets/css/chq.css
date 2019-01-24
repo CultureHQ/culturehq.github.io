@@ -16,27 +16,17 @@ body {
 
 .page-header {
   background: #2c3e4f;
-  padding: 1rem 6rem;
+  padding: .5rem 1rem;
 }
 
-.project-name {
-  font-size: 2.5rem;
+.page-header a {
+  color: white;
+  font-size: 1.5rem;
   font-weight: 300;
+  text-decoration: none;
 }
 
-@media screen and (max-width: 42em) {
-  .project-name {
-    font-size: 1.75rem;
-  }
-}
-
-.project-tagline {
-  font-size: 1rem;
-  margin: 0.5rem 0;
-}
-
-.main-content h1,
-.main-content a {
+.main-content h1 {
   color: #6a89af;
   font-weight: 300;
 }
@@ -46,8 +36,33 @@ body {
   font-weight: 300;
 }
 
+.main-content a {
+  color: #53739b;
+  font-weight: 300;
+}
+
 .main-content img {
   vertical-align: middle;
+}
+
+.main-content.home ul {
+  list-style: none;
+}
+
+.chq-cir {
+  height: 1.8rem;
+  vertical-align: text-bottom;
+  width: 1.8rem;
+}
+
+.main-content .post-heading {
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.main-content .post-heading + p {
+  margin-top: .5rem;
+  text-align: center;
 }
 
 footer {

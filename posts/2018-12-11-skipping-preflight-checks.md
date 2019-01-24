@@ -1,7 +1,5 @@
----
-heading: Skipping preflight checks
-subheading: 2018-12-11 - @kddeisz
----
+<h1 class="post-heading">Skipping preflight checks</h1>
+<em>December 11, 2018 - [@kddeisz](https://twitter.com/kddeisz)</em>
 
 Preflight checks are part of the CORS system that browsers fire before cross-origin requests in order to determine if the request is allowed. These requests can add up over time and cause a discernable lag in your web application.
 
@@ -67,3 +65,5 @@ Using the above code we can then call `skipPreflightChecks()`, and once it resol
 ## tl;dr
 
 Preflight checks are triggered because of the same-origin check. You can change the domain of your webpage by modifying `document.domain`. Given these facts, you can embed an iframe in your webpage that sets its own domain to your top-level domain as well as setting your domain to your top-level domain in your frontend to bypass these checks and achieve preflight-less cross subdomain requests that are faster to resolve.
+
+[Back to home](/)
