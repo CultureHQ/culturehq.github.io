@@ -5,7 +5,7 @@ Recently, I wrote a [plugin for `prettier`](https://github.com/prettier/plugin-r
 
 ## case
 
-`case` expressions in Ruby are much like switch statements in other languages. They provide a way to branch logic based on one common value. However, you can also have `case` expressions without a predicate at all, which makes them effectively `if..elsif` chains. As in:
+`case` expressions in Ruby are much like switch statements in other languages. They provide a way to branch logic based on one common value. However, you can also have `case` expressions without a predicate at all, which makes them effectively `if..elsif` chains, as in:
 
 ```ruby
 case
