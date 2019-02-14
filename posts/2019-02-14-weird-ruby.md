@@ -5,31 +5,7 @@ Recently, I wrote a [plugin for `prettier`](https://github.com/prettier/plugin-r
 
 ## case
 
-`case` expressions in Ruby are much like switch statements in other languages. They provide a way to branch logic based on one common value. You'll typically see a `case` statement switch on strings or numbers, and sometimes even classes.
-
-I was surprised to learn that the branches within a `case` statement can have all kinds of different values, and they're treated in all kinds of different ways. For example:
-
-```ruby
-case my_var
-when ->(var) { ... } # [1]
-  ...
-when MyClass # [2]
-  ...
-when 1, 2, 3 # [3]
-  ...
-when 4..5 # [4]
-  ...
-end
-```
-
-Look at all those different kinds of expressions! Let's break them down:
-
-* [1] - you can use a proc or a lambda (but not just something that responds to #call) to test for equality in your own custom way
-* [2] - you can use a class or module, which will be compared using the `===` operator
-* [3] - you can pass multiple predicates, and it will match any of them
-* [4] - you can pass range objects, and it will check if the value is contained within the range
-
-You can also have `case` expressions without a predicate at all, which makes them effectively `if..elsif` chains. As in:
+`case` expressions in Ruby are much like switch statements in other languages. They provide a way to branch logic based on one common value. However, you can also have `case` expressions without a predicate at all, which makes them effectively `if..elsif` chains. As in:
 
 ```ruby
 case
