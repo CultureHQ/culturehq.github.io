@@ -14,6 +14,7 @@ heading: CultureHQ Engineering
 
 * [adequate_serialization](https://github.com/CultureHQ/adequate_serialization) [![Gem Version](https://img.shields.io/gem/v/adequate_serialization.svg)](https://github.com/CultureHQ/adeqaute_serialization) - defines serializers that will convert objects into hashes suitable for caching or JSON HTTP responses
 * [paperweight](https://github.com/CultureHQ/paperweight) [![Gem Version](https://img.shields.io/gem/v/paperweight.svg)](https://github.com/CultureHQ/paperweight) - handles Paperclip attachments on the backend in a delayed process
+* [tiny_struct](https://github.com/CultureHQ/tiny_struct) [![Gem Version](https://img.shields.io/gem/v/tiny_struct.svg)](https://github.com/CultureHQ/tiny_struct) - builds Struct classes that do less
 
 # JavaScript projects
 
