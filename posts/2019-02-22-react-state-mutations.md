@@ -132,6 +132,7 @@ The above component functions as a toggle and keeps track of the times that the 
 Recently, we added support for React's [hooks](https://reactjs.org/docs/hooks-overview.html) by allowing our state mutations to be used as individual hooks. For example, the `increment` equivalent is `useIncrement`, as in:
 
 ```javascript
+import React from "react";
 import { useIncrement } from "react-state-mutations";
 
 const Counter = () => {
@@ -146,6 +147,7 @@ Each of the hooks returns a two-element array (mirroring the `useState` hook). T
 This functions similarly with "argument" mutations, as in:
 
 ```javascript
+import React from "react";
 import { useAppend } from "react-state-mutations";
 
 const ClickLog = () => {
@@ -159,6 +161,47 @@ const ClickLog = () => {
           <li key={+event}>{event}</li>
         ))}
       </ul>
+    </>
+  );
+};
+```
+
+### Build your own
+
+You can even create your own hooks using `makeStandaloneHook` and `makeArgumentHook`. For example, you could write something that doubles in value each time:
+
+```javascript
+import React from "react";
+import { makeStandaloneHook } from "react-state-mutations";
+
+const useDouble = makeStandaloneHook(value => value * 2, 1);
+
+const DoubleDouble = () => {
+  const [count, onDouble] = useDouble();
+
+  return <button type="button" onClick={onDouble}>{count}</button>;
+};
+```
+
+Or you could write a hook that keeps track of a sum:
+
+```javascript
+import React, { useCallback } from "react";
+import { makeArgumentHook } from "react-state-mutations";
+
+const useSum = makeArgumentHook(object => value => value + object, 0);
+
+const Sum = () => {
+  const [count, onAdd] = useSum(0);
+  const [num, setNum] = useState("");
+
+  const onChange = useCallback(event => setNum(event.target.value), []);
+  const onClick = useCallback(() => onAdd(num), [num]);
+
+  return (
+    <>
+      <input type="number" value={num} onChange={onChange} />
+      <button type="button" onClick={onClick}>{count}</button>
     </>
   );
 };
