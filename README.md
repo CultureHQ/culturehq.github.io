@@ -5,6 +5,7 @@ heading: CultureHQ Engineering
 
 # Blog posts
 
+* [react-state-mutations](posts/2019-02-22-react-state-mutations) - February 22, 2019
 * [Weird Ruby](posts/2019-02-14-weird-ruby) - February 14, 2019
 * [Dynamic ActiveRecord columns](posts/2019-01-18-dynamic-activerecord-columns) - January 18, 2019
 * [Delegating ActiveRecord scopes](posts/2019-01-11-delegating-activerecord-scopes) - January 11, 2019
