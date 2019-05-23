@@ -5,6 +5,7 @@ heading: CultureHQ Engineering
 
 # Blog posts
 
+* [Polyfill as needed](posts/2019-05-23-polyfill-as-needed) - May 23, 2019
 * [react-state-mutations](posts/2019-02-22-react-state-mutations) - February 22, 2019
 * [Weird Ruby](posts/2019-02-14-weird-ruby) - February 14, 2019
 * [Dynamic ActiveRecord columns](posts/2019-01-18-dynamic-activerecord-columns) - January 18, 2019
