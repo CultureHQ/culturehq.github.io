@@ -23,7 +23,7 @@ The only problem with this service is that it has no SLA, so most businesses can
 
 In the spirit of Kent's post, we've created our own service for polyfilling, and the code can be found [here](https://github.com/CultureHQ/polyfill-lambda).
 
-## `polyfill-lambda`
+## polyfill-lambda
 
 `polyfill-lambda` is a service that can be deployed to Amazon Web Services to handle all your polyfilling needs. It works by building three main resources in AWS:
 
