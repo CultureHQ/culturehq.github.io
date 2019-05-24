@@ -31,6 +31,7 @@ heading: CultureHQ Engineering
 * [react-state-mutations](https://github.com/CultureHQ/react-state-mutations) [![Package Version](https://img.shields.io/npm/v/react-state-mutations.svg)](https://www.npmjs.com/package/react-state-mutations) - mutates react state without race conditions
 * [react-tenor](https://engineering.culturehq.com/react-tenor) [![Package Version](https://img.shields.io/npm/v/react-tenor.svg)](https://www.npmjs.com/package/react-tenor) - a React component for selected GIFs from Tenor
 * [react-tiny-router](https://github.com/CultureHQ/react-tiny-router) [![Package Version](https://img.shields.io/npm/v/react-tiny-router.svg)](https://www.npmjs.com/package/react-tiny-router) - a tiny router for React using babel-macros
+* [SharePoint](https://github.com/CultureHQ/SharePoint) - CultureHQ's SharePoint add-in
 
 # Other projects
 
