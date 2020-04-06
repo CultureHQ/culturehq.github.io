@@ -37,8 +37,3 @@ heading: CultureHQ Engineering
 * [@culturehq/scripts](https://github.com/CultureHQ/scripts) [![Package Version](https://img.shields.io/npm/v/@culturehq/scripts.svg)](https://www.npmjs.com/package/@culturehq/scripts) - CultureHQ's CLI toolbox for JavaScript projects
 * [polyfill-lambda](https://github.com/CultureHQ/polyfill-lambda) - generates polyfills based on user agent strings
 * [react-tiny-router](https://github.com/CultureHQ/react-tiny-router) [![Package Version](https://img.shields.io/npm/v/react-tiny-router.svg)](https://www.npmjs.com/package/react-tiny-router) - a tiny router for React using babel-macros
-
-## Other projects
-
-* [actions-bundler](https://github.com/CultureHQ/actions-bundler) - GitHub Actions wrapper for the bundler CLI
-* [actions-yarn](https://github.com/CultureHQ/actions-yarn) - GitHub Actions wrapper for the yarn CLI
